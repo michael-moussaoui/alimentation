@@ -1,7 +1,71 @@
+@import 'variables';
+@import 'components/header.scss';
+@import 'components/dataUser.scss';
+@import 'components/foodList.scss';
+@import 'components/form.scss';
+
+// *{
+//     margin:0;
+//     padding:0;
+//     box-sizing: border-box;
+// }
 body{
-    background-color: red;
+    background: darkseagreen;
+
+   
+}
+body::-webkit-scrollbar{
+    width: 0px;
+    
 }
 
-h1{
-    color:aqua;
+.containerApp{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+main{
+    flex:1;
+    overflow-y: auto;
+}
+main::-webkit-scrollbar{
+    width: 0px;
+    
+}
+
+
+
+.custom-shape-divider-bottom-1671192635 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1671192635 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 123px;
+}
+
+.custom-shape-divider-bottom-1671192635 .shape-fill {
+    fill: darkseagreen;
+}
+
+.date{
+    color:$textColor;
+    font-weight: bolder;
+}
+.food{
+    margin:1.5rem;
+    box-shadow: 7px 8px 5px 0px rgba(11,72,4,0.86);
+-webkit-box-shadow: 7px 8px 5px 0px rgba(11,72,4,0.86);
+-moz-box-shadow: 7px 8px 5px 0px rgba(11,72,4,0.86);
+}
+
+.kgFood{
+    color: $textColor;
 }

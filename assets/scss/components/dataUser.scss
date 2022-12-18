@@ -1,0 +1,29 @@
+.dataUser{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 30px;
+    background: linear-gradient(to bottom, $primary, $secondary);
+    color: $textColor;
+    
+    .doughnut{
+        position: relative;
+        display: flex;
+        width:300px;
+        align-items: center;
+        justify-content: center;
+        margin:auto;
+        font-size: 1.5rem;
+       
+        .kcal{
+            color:ghostwhite;
+    }   
+    } 
+}
+
+.first{
+    position: relative;
+    height: 120px;
+    background: linear-gradient(to bottom, $primary, $secondary);
+}

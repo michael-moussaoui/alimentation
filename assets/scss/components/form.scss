@@ -1,0 +1,45 @@
+
+input:focus,
+select:focus{
+    box-shadow: 0 0 0 3px hsla(var(--input-focus-h), var(--input-focus-s), calc(var(--input-focus-l) +
+          40%), 0.8) !important;
+}
+
+input:focus-visible,
+select:focus-visible
+{
+    outline: 2px solid $textColor !important;
+   
+}
+input
+#name,
+#age,
+#email,
+#password{
+    color:$textColor;
+}
+
+option:hover:focus{
+    background-color: forestgreen !important;
+}
+
+input[type=range]{
+    
+    opacity: 0.9 !important;
+
+}
+.form-range::-webkit-slider-thumb{
+    background: $textColor !important;
+}
+
+#output,
+#outputBis{
+    color: $textColor !important;
+    font-weight: bold;
+}
+
+.spanForm a {
+    text-decoration: none;
+    color: $textColor !important;
+    font-weight: 600;
+}

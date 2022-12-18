@@ -1,9 +1,151 @@
-body {
-  background-color: red;
+header {
+  background-color: #73ba9b;
+  padding: 10px 0;
+  color: #fff;
 }
 
-h1 {
-  color: aqua;
+.dataUser {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 30px;
+  background: linear-gradient(to bottom, #73ba9b, #73ba5a);
+  color: #198754;
+}
+.dataUser .doughnut {
+  position: relative;
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 1.5rem;
+}
+.dataUser .doughnut .kcal {
+  color: ghostwhite;
+}
+
+.first {
+  position: relative;
+  height: 120px;
+  background: linear-gradient(to bottom, #73ba9b, #73ba5a);
+}
+
+.food {
+  background-color: ghostwhite;
+  background-color: #73ba5a;
+  border-radius: 15px;
+  box-shadow: 5px 4px -1px #000;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin-bottom: 10px;
+  padding: 1.2rem;
+}
+.food .kcal {
+  color: grey;
+}
+
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 3px hsla(var(--input-focus-h), var(--input-focus-s), calc(var(--input-focus-l) + 40%), 0.8) !important;
+}
+
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #198754 !important;
+}
+
+input #name,
+#age,
+#email,
+#password {
+  color: #198754;
+}
+
+option:hover:focus {
+  background-color: forestgreen !important;
+}
+
+input[type=range] {
+  opacity: 0.9 !important;
+}
+
+.form-range::-webkit-slider-thumb {
+  background: #198754 !important;
+}
+
+#output,
+#outputBis {
+  color: #198754 !important;
+  font-weight: bold;
+}
+
+.spanForm a {
+  text-decoration: none;
+  color: #198754 !important;
+  font-weight: 600;
+}
+
+body {
+  background: darkseagreen;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+.containerApp {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex: 1;
+  overflow-y: auto;
+}
+
+main::-webkit-scrollbar {
+  width: 0px;
+}
+
+.custom-shape-divider-bottom-1671192635 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1671192635 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 123px;
+}
+
+.custom-shape-divider-bottom-1671192635 .shape-fill {
+  fill: darkseagreen;
+}
+
+.date {
+  color: #198754;
+  font-weight: bolder;
+}
+
+.food {
+  margin: 1.5rem;
+  box-shadow: 7px 8px 5px 0px rgba(11, 72, 4, 0.86);
+  -webkit-box-shadow: 7px 8px 5px 0px rgba(11, 72, 4, 0.86);
+  -moz-box-shadow: 7px 8px 5px 0px rgba(11, 72, 4, 0.86);
+}
+
+.kgFood {
+  color: #198754;
 }
 
 /*# sourceMappingURL=app.css.map */
