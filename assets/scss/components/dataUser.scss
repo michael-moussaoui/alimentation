@@ -8,16 +8,24 @@
     color: $textColor;
     
     .doughnut{
-        position: relative;
+        // position: relative;
         display: flex;
         width:300px;
         align-items: center;
         justify-content: center;
         margin:auto;
         font-size: 1.5rem;
+        // border:  2px solid #591;
+
+        #myChart{
+           margin: auto;
+        }
        
         .kcal{
+            position: absolute;
+            z-index: 50;
             color:ghostwhite;
+            
     }   
     } 
 }

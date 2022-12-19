@@ -1,5 +1,38 @@
 <?php
 
+// try {
+//     $bdd = new PDO('mysql:host=localhost;dbname=alimentation', 'root', 'root');
+// } catch (Exception $e) {
+//     die('Error: ' . $e->getMessage());
+// }
+
+// if (isset($_POST['submit'])) {
+
+//     $name = $_POST['userName'];
+//     $age = $_POST['userAge'];
+//     $genre = $_POST['userGenre'];
+//     $weight = $_POST['userWeight'];
+//     $size = $_POST['userSize'];
+//     $email = $_POST['userEmail'];
+//     $password = password_hash($_POST['userPassword'], PASSWORD_DEFAULT);
+
+//     $insertUser = $bdd->prepare('INSERT INTO users (name, age, genre,  weight, size, email, password) VALUES (:name,:age,:genre,:weight,:size,:email,:password)');
+
+//     $insertUser->bindValue('name', $name);
+//     $insertUser->bindValue('age', $age);
+//     $insertUser->bindValue('genre', $genre);
+//     $insertUser->bindValue('weight', $weight);
+//     $insertUser->bindValue('size', $size);
+//     $insertUser->bindValue('email', $email);
+//     $insertUser->bindValue('password', $password);
+
+//     $res = $insertUser->execute();
+
+//     if ($ref) {
+//         echo "Inscription réussie";
+//     }
+// }
+
 
 
 
@@ -34,18 +67,18 @@ include_once("includes/header.php");
     <div class="container mt-5">
         <div class="row">
             <div class="col">
-                <form>
+                <form method="POST" action="register.php">
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="name" placeholder="Saisissez votre prénom" aria-describedby="nameHelp">
+                        <input type="text" name="userName" class="form-control" id="name" placeholder="Saisissez votre prénom" aria-describedby="nameHelp">
                         <label for="name" class="form-label">Prenom</label>
 
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="age" placeholder="Saisissez votre age" aria-describedby="ageHelp">
+                        <input type="text" name="userAge" class="form-control" id="age" placeholder="Saisissez votre age" aria-describedby="ageHelp">
                         <label for="age" class="form-label">Age</label>
 
                     </div>
-                    <select class="form-select mb-3" aria-label="Default select example">
+                    <select class="form-select mb-3" name="userGenre" aria-label="Default select example">
                         <option selected>Selectionner votre genre</option>
                         <option value="1">Homme</option>
                         <option value="2">Femme</option>
@@ -56,26 +89,26 @@ include_once("includes/header.php");
                         <label for="size" class="form-label mt-2">Taille</label>
                         <input type="range" class="form-range" id="size" min=120 max=230 step="1" oninput="sliderChangeSize
                         (this.value)">
-                        <output id="output">170</output>
+                        <output name="userSize" id="output">170</output>
                     </div>
                     <div class="mb-3">
                         <label for="weight" class="form-label mt-2">Poids</label>
                         <input type="range" class="form-range" id="weight" min=20 max=200 step="1" oninput="sliderChangeWeight
                         (this.value)">
-                        <output id="outputBis">70</output>
+                        <output name="userWeight" id="outputBis">70</output>
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="email" placeholder="Saisissez votre adresse email" aria-describedby="emailHelp">
+                        <input type="email" name="userEmail" class="form-control" id="email" placeholder="Saisissez votre adresse email" aria-describedby="emailHelp">
                         <label for="email" class="form-label">Email</label>
 
                     </div>
                     <div class="form-floating">
-                        <input type="password" class="form-control" id="password" placeholder="Renseigner un mot de passe">
+                        <input type="password" name="userPassword" class="form-control" id="password" placeholder="Renseigner un mot de passe">
                         <label for="password">Password</label>
                     </div>
                     <div class="text-center mt-3">
-                        <button type="submit" class="btn btn-success">S'inscrire</button>
+                        <button type="submit" name="submit" class="btn btn-success">S'inscrire</button>
                     </div>
                 </form>
                 <div class="text-center mb-2 mt-1">
